@@ -12,6 +12,7 @@
 | `.claude/commands/decision-log.md` | `.codex/skills/decision-log/SKILL.md` | 採用 |
 | `.claude/commands/integration-guide.md` | `.codex/skills/integration-guide/SKILL.md` | 採用 |
 | `.claude/commands/knowledge-capture.md` | `.codex/skills/knowledge-capture/SKILL.md` | 採用 |
+| `.claude/commands/repo-intake.md` | `.codex/skills/repo-intake/SKILL.md` | 採用 |
 | `.claude/commands/research-note.md` | `.codex/skills/research-note/SKILL.md` | 採用 |
 | `.claude/commands/review-writing.md` | `.codex/skills/review-writing/SKILL.md` | 採用 |
 | `.claude/commands/tmp-note.md` | `.codex/skills/tmp-note/SKILL.md` | 採用 |
@@ -19,6 +20,6 @@
 
 ## 判断メモ
 
-- 12 件とも、案件依存が薄く、入出力形式が安定しており、横断再利用に向いている
+- 13 件とも、案件依存が薄く、入出力形式が安定しており、横断再利用に向いている
 - いずれも文書作成または文書レビューの定型ワークフローで、skill 化の効果が高い
 - Claude 側は `commands` を実行入口、`.claude/skills/` を再利用用ソースとして扱う

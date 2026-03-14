@@ -1,0 +1,8 @@
+{
+  "exclusions": [
+    "Claude Code",
+    "OpenAI API",
+    "GitHub Actions",
+    "MCP server"
+  ]
+}

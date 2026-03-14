@@ -1,6 +1,7 @@
-.DS_Store
+*.DS_Store
 .claude/settings.local.json
 .codex/config.toml
+docs/99_tmp/
 node_modules/
 .env
 .env.*

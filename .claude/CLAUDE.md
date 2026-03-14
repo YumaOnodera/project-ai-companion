@@ -1,14 +1,43 @@
-# Claude Instructions
+# Claude設定
 
-## Purpose
+## プロジェクト概要
 
-This repository stores reusable AI guidance and documentation conventions for existing business-system repositories.
+- プロジェクト名: project-ai-companion
+- 目的: 既存の業務システム案件へ後から持ち込める AI 設定、文書運用ルール、補助資料の共通化
+- このリポジトリはアプリ雛形ではなく、横断再利用する設定と資料の保管場所である
 
-## Rules
+## コミュニケーション
 
-- Respond in Japanese unless another language is explicitly needed
-- Prefer concise answers
-- Treat this repository as a cross-project companion, not an application template
-- Keep project-specific requirements, specifications, designs, and implementation details in each target repository
-- Mark uncertain information as `要確認`
-- Never commit secrets or confidential information
+- 日本語で応答する
+- 簡潔に回答し、自明な説明は省略する
+- 複雑な作業では、実施前に短い計画を提示する
+
+## 作業方針
+
+- まず `README.md` `docs/00_overview.md` `docs/README.md` を確認する
+- 案件固有の要件、仕様、設計、実装ルールはこのリポジトリへ持ち込まない
+- `workspace` や各案件リポジトリから取り込む時は、横断再利用できるものだけを抽出する
+- 既存の正本がある場合は、新規作成より既存更新を優先する
+
+## ドキュメント運用
+
+- 正本は `docs/` 配下に集約し、役割ごとに保存先を分ける
+- 一時メモは `docs/99_tmp` に置く
+- 推測や未確定事項は `要確認` と明記する
+- Markdown は `.markdownlint.jsonc` と既存運用に従う
+- 見出しは同一ファイル内で重複させない
+- Markdown テーブルは `| a | b |` の compact 形式で記述する
+
+## Claude Code 運用
+
+- 共有権限ルールは `.claude/settings.json` を正本とする
+- 定型作業は `.claude/commands/` に寄せる
+- 共有 Hook は `.claude/scripts/` に寄せる
+- Codex 向けの雛形や補助資料は `.codex/` を参照する
+
+## 禁止事項
+
+- 秘匿情報、鍵、個人情報をコミットしない
+- 根拠のない断定を文書に残さない
+- 参照先がある内容を重複管理しない
+- 特定案件専用のルールを共通設定として固定しない

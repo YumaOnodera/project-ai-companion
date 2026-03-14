@@ -1,0 +1,89 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch",
+      "WebSearch",
+      "Read(./README.md)",
+      "Read(./AGENTS.md)",
+      "Read(./docs/**)",
+      "Read(./.claude/**)",
+      "Read(./.codex/**)",
+      "Read(./.vscode/**)",
+      "Read(./.markdownlint.jsonc)",
+      "Read(./package.json)",
+      "Edit(./README.md)",
+      "Edit(./docs/**)",
+      "Edit(./.claude/**)",
+      "Edit(./.codex/**)",
+      "Edit(./.vscode/**)",
+      "Edit(./.markdownlint.jsonc)",
+      "Edit(./package.json)",
+      "Bash(ls *)",
+      "Bash(cat *)",
+      "Bash(rg *)",
+      "Bash(find *)",
+      "Bash(sed *)",
+      "Bash(awk *)",
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git add *)",
+      "Bash(git restore --staged *)",
+      "Bash(pnpm run *)",
+      "Bash(pnpm exec *)",
+      "Bash(pnpm install *)"
+    ],
+    "ask": [
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(gh *)",
+      "Bash(docker *)",
+      "Bash(pnpm publish *)"
+    ],
+    "deny": [
+      "Read(./.env*)",
+      "Read(./**/.env*)",
+      "Read(./secrets/**)",
+      "Read(./**/secrets/**)",
+      "Edit(./.env*)",
+      "Edit(./**/.env*)",
+      "Edit(./secrets/**)",
+      "Edit(./**/secrets/**)",
+      "Bash(rm -rf *)",
+      "Bash(sudo *)",
+      "Bash(chmod -R 777 *)",
+      "Bash(chown -R *)",
+      "Bash(git push -f *)",
+      "Bash(git reset --hard *)",
+      "Bash(git clean -fd *)",
+      "Bash(curl *|*sh*)",
+      "Bash(wget *|*sh*)"
+    ]
+  },
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true,
+    "excludedCommands": ["docker"],
+    "network": {
+      "allowedDomains": [
+        "github.com",
+        "*.github.com",
+        "*.npmjs.org",
+        "registry.npmjs.org",
+        "registry.yarnpkg.com"
+      ]
+    }
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/scripts/ja-space-format.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

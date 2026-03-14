@@ -1,11 +1,12 @@
 ---
 name: commit-message
+disable-model-invocation: true
 description: "Claude 向けのコミットメッセージ作成 skill。変更内容から `<type>: <要約>` 形式の日本語案をまとめる。"
 ---
 
 # コミットメッセージ作成 skill
 
-`.claude/commands/commit-message.md` に対応する再利用用 skill。
+Claude Code の定型作業を `/commit-message` で呼ぶための skill。
 
 ## 使う場面
 

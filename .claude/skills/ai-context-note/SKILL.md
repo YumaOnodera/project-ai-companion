@@ -1,11 +1,12 @@
 ---
 name: ai-context-note
+disable-model-invocation: true
 description: "Claude 向けの AI コンテキスト作成 skill。参照方針、適用範囲、指示ルール、禁止事項を再利用可能な形で整理する。"
 ---
 
 # AI コンテキスト作成 skill
 
-`.claude/commands/ai-context-note.md` に対応する再利用用 skill。
+Claude Code の定型作業を `/ai-context-note` で呼ぶための skill。
 
 ## 使う場面
 

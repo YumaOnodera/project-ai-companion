@@ -1,11 +1,12 @@
 ---
 name: knowledge-capture
+disable-model-invocation: true
 description: "Claude 向けのナレッジ化 skill。得られた知見を適用条件付きの再利用可能な形へ変換する。"
 ---
 
 # ナレッジ化 skill
 
-`.claude/commands/knowledge-capture.md` に対応する再利用用 skill。
+Claude Code の定型作業を `/knowledge-capture` で呼ぶための skill。
 
 ## 使う場面
 

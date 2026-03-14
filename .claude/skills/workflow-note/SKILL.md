@@ -1,11 +1,12 @@
 ---
 name: workflow-note
+disable-model-invocation: true
 description: "Claude 向けの作業手順書作成 skill。定型作業を目的、前提、手順、確認ポイント付きで整理する。"
 ---
 
 # 作業手順書作成 skill
 
-`.claude/commands/workflow-note.md` に対応する再利用用 skill。
+Claude Code の定型作業を `/workflow-note` で呼ぶための skill。
 
 ## 使う場面
 

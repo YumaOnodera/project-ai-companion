@@ -1,11 +1,12 @@
 ---
 name: integration-guide
+disable-model-invocation: true
 description: "Claude 向けの連携手順書作成 skill。外部サービス連携の前提、手順、確認項目、注意点を整理する。"
 ---
 
 # 連携手順書作成 skill
 
-`.claude/commands/integration-guide.md` に対応する再利用用 skill。
+Claude Code の定型作業を `/integration-guide` で呼ぶための skill。
 
 ## 使う場面
 

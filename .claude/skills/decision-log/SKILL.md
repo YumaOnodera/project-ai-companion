@@ -1,11 +1,12 @@
 ---
 name: decision-log
+disable-model-invocation: true
 description: "Claude 向けの意思決定ログ作成 skill。背景、選択肢、決定、理由、影響範囲を整理して残す。"
 ---
 
 # 意思決定ログ作成 skill
 
-`.claude/commands/decision-log.md` に対応する再利用用 skill。
+Claude Code の定型作業を `/decision-log` で呼ぶための skill。
 
 ## 使う場面
 

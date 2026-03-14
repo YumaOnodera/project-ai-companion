@@ -1,11 +1,11 @@
 # Claude Skills Draft
 
-このディレクトリは、`.claude/commands/` と対応する再利用用 skill の置き場です。
+このディレクトリは、Claude Code で直接 `/skill-name` として呼ぶ project skill の置き場です。
 
 ## 位置づけ
 
-- `.claude/commands/` は実行入口
-- `.claude/skills/` は再利用用の設計原本
+- `.claude/skills/` を実行入口兼定義の正本とする
+- slash で呼ぶ時も `.claude/skills/` の `name` を使う
 - Codex 側の対応物は `.codex/skills/` を参照する
 
 ## 対象

@@ -1,11 +1,12 @@
 ---
 name: review-writing
+disable-model-invocation: true
 description: "Claude 向けの文書表現レビュー skill。冗長さや AI っぽい定型句を減らし、自然な改善案を出す。"
 ---
 
 # 文書表現レビュー skill
 
-`.claude/commands/review-writing.md` に対応する再利用用 skill。
+Claude Code の定型作業を `/review-writing` で呼ぶための skill。
 
 ## 使う場面
 

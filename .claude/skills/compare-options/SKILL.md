@@ -1,11 +1,12 @@
 ---
 name: compare-options
+disable-model-invocation: true
 description: "Claude 向けの比較検討 skill。3件以内の選択肢を同じ粒度で比較し、推奨案まで整理する。"
 ---
 
 # 比較検討 skill
 
-`.claude/commands/compare-options.md` に対応する再利用用 skill。
+Claude Code の定型作業を `/compare-options` で呼ぶための skill。
 
 ## 使う場面
 

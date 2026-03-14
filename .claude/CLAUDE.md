@@ -31,8 +31,7 @@
 ## Claude Code 運用
 
 - 共有権限ルールは `.claude/settings.json` を正本とする
-- 定型作業の実行入口は `.claude/commands/` に寄せる
-- 再利用用の文書化ワークフローは `.claude/skills/` に寄せる
+- 定型作業と再利用用の文書化ワークフローは `.claude/skills/` に寄せる
 - 共有 Hook は `.claude/scripts/` に寄せる
 - Codex 向けの雛形や補助資料は `.codex/` を参照する
 

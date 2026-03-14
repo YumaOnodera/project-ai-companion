@@ -1,11 +1,12 @@
 ---
 name: research-note
+disable-model-invocation: true
 description: "Claude 向けの調査メモ作成 skill。事実と推測を分け、参照元と次アクションを整理する。"
 ---
 
 # 調査メモ作成 skill
 
-`.claude/commands/research-note.md` に対応する再利用用 skill。
+Claude Code の定型作業を `/research-note` で呼ぶための skill。
 
 ## 使う場面
 

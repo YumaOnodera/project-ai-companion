@@ -7,7 +7,7 @@
 
 - `AGENTS.md` と Codex / Claude Code 向け設定の叩き台
 - `docs/` 配下で再利用する AI 文脈と導入テンプレート
-- 持ち込み先リポジトリで使う `.claude/commands/` の雛形
+- 持ち込み先リポジトリで使う `.claude/skills/` の雛形
 - Codex / Claude で再利用する文書化系 skill の draft
 - Markdown 運用、AI 依頼、ナレッジ整理のための共通ルール
 - 既存案件へコピーしやすい最小限の editor / lint 設定

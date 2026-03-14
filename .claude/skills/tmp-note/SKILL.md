@@ -1,11 +1,12 @@
 ---
 name: tmp-note
+disable-model-invocation: true
 description: "Claude 向けの一時メモ作成 skill。途中メモを目的、仮説、次アクション付きで退避する。"
 ---
 
 # 一時メモ作成 skill
 
-`.claude/commands/tmp-note.md` に対応する再利用用 skill。
+Claude Code の定型作業を `/tmp-note` で呼ぶための skill。
 
 ## 使う場面
 
